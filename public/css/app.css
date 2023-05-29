@@ -1,0 +1,98 @@
+* {
+    font-family: "{{ asset('fonts/goodTimesrg.otf') }}";
+}
+
+body {
+    margin: 0%;
+}
+
+header {
+    background-color: rebeccapurple;
+    position: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+/* Header */
+
+.logo {
+    color: aliceblue;
+    font-size: 2em;
+}
+
+.navigation a {
+    position: relative;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #ffff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transform: .5s;
+}
+
+.navigation .btnLogin-popup:hover {
+    background: #ffff;
+    color: red;
+}
+
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
+.tron {
+    flex: 50%;
+    background-color: aqua;
+}
+
+/* Input */
+input {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+/* Button */
+button {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.btn-submit {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #ffff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transform: .5s;
+    
+}
+
+.btn-submit:hover {
+    background: #dff;
+    color: red;
+}
+
+
+/* Form Dosen */
+.judul-form-dosen {
+    text-align: center;
+    font-size: 18px;
+}
