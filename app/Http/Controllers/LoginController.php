@@ -17,10 +17,11 @@ class LoginController extends Controller
 
     public static function checkLogin(){
         $d_stat = session('stat');
+
         if($d_stat == 1){
-            return true;
+            return 1;
         }else{
-            return false;
+            return 0;
         }
     }
 
@@ -40,6 +41,5 @@ class LoginController extends Controller
 
     public function actionLogout(){
         session::flush();
-        //session(["stat" => 0]);
     }
 }

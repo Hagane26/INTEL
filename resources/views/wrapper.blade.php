@@ -8,4 +8,7 @@
 
     <script type="text/javascript" src="{{ asset('ckeditor/ckeditor.js') }}"></script>
 
+    <link rel="stylesheet" href="{{ asset('css/datatables.css') }}" />
+
+    <script src="{{ asset('js/datatables.js') }}"></script>
 </head>

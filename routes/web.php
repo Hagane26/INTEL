@@ -6,6 +6,7 @@ use App\Http\Controllers\utama;
 use App\Http\Controllers\InProdiController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PengumumanController;
+use App\Http\Controllers\roleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,3 +43,8 @@ Route::get('dosen/sender',[InProdiController::class,'index']);
 Route::get('/pengumuman',[PengumumanController::class,'index']);
 Route::get('/pengumuman/add',[PengumumanController::class,'create']);
 Route::post('/pengumuman/add',[PengumumanController::class,'store']);
+Route::get('/pengumumanjson',[PengumumanController::class,'indexData']);
+
+//Route
+Route::get('/role/add',[roleController::class,'create']);
+Route::post('/role/add',[roleController::class,'store']);

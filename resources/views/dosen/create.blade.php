@@ -31,6 +31,17 @@
                     </td>
                 </tr>
                 <tr>
+                    <td>Rule</td>
+                    <td>:</td>
+                    <td>
+                        <select name="role" id="role">
+                            @foreach ($roles as $r)
+                                <option value="{{ $r->id }}">{{ $r->nama_role }}</option>
+                            @endforeach
+                        </select>
+                    </td>
+                </tr>
+                <tr>
                     <td colspan="3">
                         <button type="submit" class="btn-submit">Tambah Data Dosen</button>
                     </td>

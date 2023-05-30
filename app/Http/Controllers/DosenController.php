@@ -6,12 +6,15 @@ use App\Http\Requests\StoreDosenRequest;
 use App\Http\Requests\UpdateDosenRequest;
 use App\Models\Dosen;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\utama;
+use App\Models\Role;
 
 class DosenController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
+
     public function index()
     {
         $respon = Dosen::get();
@@ -48,8 +51,12 @@ class DosenController extends Controller
      */
     public function create()
     {
-        LoginController::checkLogin();
-        //return view('dosen.create');
+        //LoginCheck =  LoginController::checkLogin();
+        //if($LoginCheck == 0){
+        //    return redirect()->action([utama::class,'index']);
+        //}
+        $roles = Role::get();
+        return view('dosen.create',compact('roles'));
     }
 
     /**
@@ -57,11 +64,17 @@ class DosenController extends Controller
      */
     public function store(StoreDosenRequest $request)
     {
+        //$LoginCheck =  LoginController::checkLogin();
+        //if($LoginCheck == 0){
+        //    return redirect()->action([utama::class,'index']);
+        //}
+
         $respon = [
             'nidn' => $request->nidn,
             'nama_dosen' => $request->nama,
             'jenis_k' => $request->jk,
             'in_prodi' => false,
+            'id_role' => $request->role,
         ];
         $result = Dosen::create($respon);
         if ($result){

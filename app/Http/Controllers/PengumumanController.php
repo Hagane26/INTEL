@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StorepengumumanRequest;
 use App\Http\Requests\UpdatepengumumanRequest;
 use App\Models\pengumuman;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\utama;
+
 
 class PengumumanController extends Controller
 {
@@ -17,11 +20,21 @@ class PengumumanController extends Controller
         var_dump($respon);
     }
 
+    public function indexData()
+    {
+        $data = pengumuman::get();
+        echo json_encode(array("result"=>$data));
+    }
+
     /**
      * Show the form for creating a new resource.
      */
     public function create()
     {
+        $LoginCheck =  LoginController::checkLogin();
+        if($LoginCheck == 0){
+            return redirect()->action([utama::class,'index']);
+        }
         return view('pengumuman.create');
     }
 
@@ -30,6 +43,11 @@ class PengumumanController extends Controller
      */
     public function store(StorepengumumanRequest $request)
     {
+        $LoginCheck =  LoginController::checkLogin();
+        if($LoginCheck == 0){
+            return redirect()->action([utama::class,'index']);
+        }
+
         $sender = [
             'judul' => $request->judul,
             'isi' => $request->isi,
