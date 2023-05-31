@@ -4,11 +4,18 @@
 
 body {
     margin: 0%;
-    background-color: #306374;
+    background-color: #C4DFDF;
 }
 
+/* h desc */
+h2 {
+    color: white;
+}
+
+/* Header */
+
 header {
-    background-color: rebeccapurple;
+    background-color: #27374D;
     position: fixed;
     top: 0;
     left: 0;
@@ -19,17 +26,15 @@ header {
     z-index: 99;
 }
 
-/* Header */
-
 .logo {
     margin-left: 2%;
-    color: aliceblue;
+    color: #DDE6ED;
     font-size: 2em;
 }
 
 .navigation a {
     position: relative;
-    color: aliceblue;
+    color: #526D82;
     text-decoration: none;
     margin-right: 10px;
 }
@@ -54,7 +59,7 @@ header {
 
 
 .row {
-    margin-top: 7%;
+    margin-top: 1%;
     display: flex;
 }
 
@@ -62,9 +67,21 @@ header {
     flex: 50%;
 }
 
+/* Horn */
+
+.horn-alert {
+    margin-top: 7%;
+    background-color: #FA9884;
+    font-size: 18px;
+    color: red;
+    font-weight: bold;
+}
+
+/* Tron */
+
 .tron {
-    flex: 50%;
-    background-color: aqua;
+    position: block;
+    background-color: #111;
 }
 
 /* Input */
@@ -134,8 +151,20 @@ button {
 }
 
 /* Table Jadwal Kuliah */
-.table-jadwal-kuliah table {
-    color: #dff;
+.table-jadwal-kuliah {
+    text-align: left;
+    position: relative;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.table-jadwal-kuliah th {
+    background: #2c3b46;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    padding: 8px;
+    color: aliceblue;
+    width: 150px;
 }
 
 

@@ -1,0 +1,103 @@
+:root {
+    /* Warm 1 */
+    color: (#FFF3E2,
+            #FFE5CA,
+            #FA9884,
+            #E74646);
+
+    /* Warm 2 */
+    color: (#9A1663,
+            #E0144C,
+            #FF5858,
+            #FF97C1);
+
+    /* Warm 3 **/
+    color: (#FFB9B9,
+            #FFDDD2,
+            #FFACC7,
+            #FF8DC7);
+
+    /* Warm 4 **/
+    color: (#DD5353,
+            #B73E3E,
+            #DBC8AC,
+            #DBC8AC);
+
+    /* Warm 5 **/
+    color: (#D2001A,
+            #FFDE00,
+            #FFFAE7,
+            #EFEFEF,
+        );
+
+    /* Cold 1 **/
+    color: (#11009E,
+            #4942E4,
+            #8696FE,
+            #C4B0FF,
+        );
+
+    /* Cold 2 **/
+    color: (#8294C4,
+            #ACB1D6,
+            #DBDFEA,
+            #FFEAD2,
+        );
+
+    /* Cold 3 **/
+    color: (#27374D,
+            #526D82,
+            #9DB2BF,
+            #DDE6ED,
+        );
+
+    /* Cold 4 **/
+    color: (#F1F6F9,
+            #394867,
+            #212A3E,
+            #9BA4B5,
+        );
+
+    /* Cold 5 **/
+    color: (#57C5B6,
+            #159895,
+            #1A5F7A,
+            #002B5B,
+        );
+
+    /* Cold 6 **/
+    color: (#0A4D68,
+            #088395,
+            #05BFDB,
+            #00FFCA,
+        );
+
+    /* Cold 7 **/
+    color: (#F9F54B,
+            #8BF5FA,
+            #3F979B,
+            #205E61,
+        );
+
+    /* Cold 8 **/
+    color: (#635985,
+            #443C68,
+            #393053,
+            #18122B,
+        );
+
+    /* Cold 9 */
+    color: (#645CBB,
+            #A084DC,
+            #BFACE2,
+            #EBC7E6,
+        );
+
+    /* Cold 10 */
+    color: (#CFF5E7,
+            #A0E4CB,
+            #59C1BD,
+            #0D4C92,
+        );
+
+}
