@@ -8,13 +8,13 @@
                 <tr>
                     <td>Nidn</td>
                     <td>
-                        <input type="number" id="nidn" name="nidn">
+                        <input type="number" id="username" name="username">
                     </td>
                 </tr>
                 <tr>
                     <td>Nama</td>
                     <td>
-                        <input type="text" id="nama" name="nama">
+                        <input type="text" id="password" name="password">
                     </td>
                 </tr>
             </table>

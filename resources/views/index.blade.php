@@ -7,7 +7,7 @@
         <nav class="navigation">
             <a href="#">Home</a>
             <a href="#">Detail</a>
-            <button class="btnLogin-popup">LOGIN</button>
+            <button class="btnLogin-popup" onclick="location.href = '/login'">LOGIN</button>
         </nav>
     </header>
 

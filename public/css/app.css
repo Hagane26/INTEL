@@ -9,7 +9,8 @@ body {
 
 /* h desc */
 h2 {
-    color: white;
+    color: #27374D;
+    text-align: center;
 }
 
 /* Header */
@@ -34,14 +35,14 @@ header {
 
 .navigation a {
     position: relative;
-    color: #526D82;
+    color: #DDE6ED;
     text-decoration: none;
     margin-right: 10px;
 }
 
 .navigation .btnLogin-popup {
-    width: 100px;
-    height: 50px;
+    width: 150px;
+    height: 40px;
     background: transparent;
     border: 2px solid #ffff;
     outline: none;
@@ -50,11 +51,12 @@ header {
     transform: .5s;
     font-size: 20px;
     margin-right: 20px;
+    color: #DDE6ED;
 }
 
 .navigation .btnLogin-popup:hover {
-    background: #ffff;
-    color: red;
+    background: #DDE6ED;
+    color: #27374D;
 }
 
 
